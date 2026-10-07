@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ document["title"] }}</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 850px;
+            margin: 50px auto;
+        }
+
+        .restricted {
+            margin-top: 30px;
+            padding: 20px;
+            border: 2px solid #b91c1c;
+            background: #fee2e2;
+        }
+
+        .flag {
+            font-family: monospace;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<a href="{{ url_for('documents') }}">← Back to Documents</a>
+
+<h1>{{ document["title"] }}</h1>
+
+<p>
+    Document ID:
+    <strong>{{ document["id"] }}</strong>
+</p>
+
+<p>{{ document["content"] }}</p>
+
+{% if flag %}
+
+<div class="restricted">
+
+    <h2>Restricted Evidence Record</h2>
+
+    <p>Stage 3 Flag:</p>
+
+    <p class="flag">
+        {{ flag }}
+    </p>
+
+    <p>
+        The associated forensic evidence package is now available.
+    </p>
+
+    <a href="{{ url_for('download_evidence') }}">
+        Download evidence_drive.zip
+    </a>
+
+</div>
+
+{% endif %}
+
+</body>
+</html>
