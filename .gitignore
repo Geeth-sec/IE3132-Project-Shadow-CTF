@@ -33,3 +33,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.bak
+# Local CTFd database backups
+platform/deployment/backups/
+*.sql
