@@ -1,5 +1,5 @@
 
-cat > README.md << 'README_EOF'
+
 # PS-06 — Shadow Core Server (Linux Privilege Escalation)
 
 **Domain:** Linux / System Security
