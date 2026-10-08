@@ -1,0 +1,8 @@
+CyberTrace Project Shadow - PS-04 Evidence Manifest
+
+File: shadow_usb.img
+SHA256: 0c4ecdd47b382460b0f6c25a5e13c4997cef44d2a2d4f01097e29b4a3e86c8cc
+Size: 67108864 bytes
+Filesystem: FAT32
+Evidence type: Synthetic forensic image
+Time convention: UTC
