@@ -1,7 +1,4 @@
-# PS-06 — Shadow Core Server (Linux Privilege Escalation)
-**Domain:** Linux / System Security
-**Difficulty:** Hard
-**Author:** Zoysa E.R.L (Member 3)
+
 cat > README.md << 'README_EOF'
 # PS-06 — Shadow Core Server (Linux Privilege Escalation)
 
