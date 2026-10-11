@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Developer Documents</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 850px;
+            margin: 50px auto;
+        }
+
+        .document {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Project Shadow Developer Documents</h1>
+
+<p>Authenticated as: <strong>{{ session["user"] }}</strong></p>
+
+<p>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</p>
+
+<hr>
+
+{% for document in documents %}
+
+<div class="document">
+    <h3>{{ document["title"] }}</h3>
+
+    <a href="{{ url_for('document', document_id=document['id']) }}">
+        Open Document
+    </a>
+</div>
+
+{% endfor %}
+
+</body>
+</html>

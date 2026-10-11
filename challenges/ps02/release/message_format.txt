@@ -1,0 +1,9 @@
+PROJECT SHADOW - MESSAGE FORMAT
+
+Expected fields after successful recovery:
+
+- Stage 2 Flag
+- Developer Portal Username
+- Developer Portal Access Phrase
+
+The values are contained inside the protected research note.
